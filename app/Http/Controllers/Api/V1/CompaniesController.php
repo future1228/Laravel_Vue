@@ -38,10 +38,4 @@ class CompaniesController extends Controller
         $company->delete();
         return '';
     }
-    public function destroy1($id)
-    {
-        $company = Company::findOrFail($id);
-        $company->delete();
-        return '';
-    }
 }
